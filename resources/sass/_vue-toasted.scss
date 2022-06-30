@@ -1,0 +1,39 @@
+// styles for vue-toasted plugin toast notifications
+
+// custom class added on init
+.custom-toasted {
+  .toasted.toasted-primary {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+  }
+
+  &.toasted-container.top-right {
+    top: 3.5%;
+  }
+  // message
+  .toasted.toasted-primary{
+    background: rgba(53, 53, 53, .8);
+
+    // shadow for all
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+  // warning
+  .toasted.toasted-primary.warning-toast{
+    background: rgba(253, 216, 53, .75);
+    color: #555;
+  }
+
+  // info
+  .toasted.toasted-primary.info{
+    background: rgba(63, 81, 181, .75);
+  }
+  // error
+  .toasted.toasted-primary.error{
+    background: rgba(250, 60, 46, .75);
+  }
+  // success
+  .toasted.toasted-primary.success{
+    background: rgba(70, 180, 74, .75);
+  }
+}

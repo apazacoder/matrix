@@ -1,0 +1,27 @@
+//.v-dialog {
+//  & > .v-card-text {
+//    padding: 0 10;
+//
+//}
+
+.v-dialog-extra-large {
+  max-width: 1400px;
+}
+
+.v-dialog-large {
+  max-width: 900px;
+}
+
+.v-dialog-medium {
+  max-width: 700px;
+}
+
+.v-dialog-small {
+  max-width: 500px;
+}
+
+.v-dialog-dense {
+  .v-card__text {
+    padding-bottom: 0 !important;
+  }
+}

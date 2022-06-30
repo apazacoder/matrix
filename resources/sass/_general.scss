@@ -1,0 +1,44 @@
+.center {
+    text-align: center;
+}
+
+.flex-center {
+    justify-content: center;
+    // center radios with flex-center container
+    .v-input--radio-group__input{
+        justify-content: center;
+    }
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+//// vertical center wrapper
+.display-table {
+    display: table;
+}
+
+// first container
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+// second container
+.horizontal-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// disabled color
+.theme--light.v-input--is-disabled, .theme--light.v-input--is-disabled input, .theme--light.v-input--is-disabled textarea {
+    color: rgba(0, 0, 0, .5);
+}
+
+// progress-linear wrapper{
+.progress-wrapper {
+    height: 4px;
+}

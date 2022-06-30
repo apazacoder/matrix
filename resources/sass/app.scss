@@ -1,0 +1,136 @@
+@import "~vuetify/dist/vuetify.min.css";
+@import "~@mdi/font/scss/materialdesignicons";
+@import "~typeface-roboto/index.css";
+@import "auth";
+@import "dashboard";
+@import "grid";
+@import "general";
+@import "vue-toasted";
+@import "variables";
+@import "v-container";
+@import "v-data-table";
+@import "v-dialog";
+@import "v-form-elements";
+
+body{
+  //background: url('/images/background.jpg');
+  //background-size: 200%;
+  //background-position: bottom left;
+}
+
+// articles
+.articles-table th:nth-child(1), .articles-table td:nth-child(1){
+  min-width: 120px;
+}
+
+
+
+
+.details-table-wrapper{
+  width:100%;
+  overflow: auto;
+  .details-table{
+    td:first-child{
+      text-align: right;
+    }
+    width: 100%;
+    min-width: 400px;
+  }
+}
+
+.entryform-dialog{
+  .headline{
+    display:inline-block;
+    padding-bottom: .75rem;
+  }
+  .row > div{
+    padding: 0 !important;
+  }
+}
+
+// tables
+@media only screen and (max-width: 600px){
+  // table toolbar first part: title, finder, action button
+  .task-toolbar > div{
+    flex-wrap: wrap;
+  }
+  .task-toolbar hr{
+    display:none;
+  }
+  .task-toolbar button{
+    width: 100%;
+    margin-top: 12px;
+  }
+  .v-data-table>.v-data-table__wrapper .v-data-table__mobile-row{
+    min-height:auto;
+  }
+  .task-toolbar > div > div:nth-child(4){
+    width: 65%;
+    max-width:65%;
+    float:left;
+  }
+  .task-toolbar > div > div:nth-child(5){
+    display:none;
+  }
+  .task-toolbar > div > button:nth-child(7){
+    width: 35%;
+    max-width: 35%;
+    float:left;
+    span > span > span{
+      display:none;
+    }
+  }
+  .task-toolbar .v-toolbar__title{
+    width:100%;
+  }
+
+  // table customizations
+  .tasks-table .v-data-table__wrapper{
+    margin-top:40px;
+    thead{
+      display:none;
+    }
+    tr td:first-child{
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    table tbody{
+      tr td{
+        width:100%;
+        display:block;
+        div{
+          padding-right:0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // toolbar
+  #top-nav .d-none{
+    display: block !important;
+  }
+  .milestones-table{
+    table-layout:fixed;
+    tr td{
+      width:100%;
+    }
+  }
+  // graph
+  .graph-dialog{
+    margin:5px;
+    .v-card__text{
+      padding: 0 !important;
+    }
+    .container{
+      margin:0 !important;
+      padding:0 !important;
+    }
+  }
+  .left-nav, .right-nav{
+    top:auto !important;
+    bottom: 0;
+  }
+}
+
+
